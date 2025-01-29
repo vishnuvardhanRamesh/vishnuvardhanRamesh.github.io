@@ -64,7 +64,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: HugoTeX/website_contents/public  # ✅ Make sure the public folder is uploaded correctly
+          path: ./HugoTeX/website_contents/public  # ✅ Make sure the public folder is uploaded correctly
 
   deploy:
     environment:
