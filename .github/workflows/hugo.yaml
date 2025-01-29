@@ -60,12 +60,12 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --source $GITHUB_WORKSPACE/../HugoTeX/website_contents  # ✅ Use the correct Hugo project directory
+            --source HugoTeX/website_contents  # ✅ Use the correct Hugo project directory
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: $GITHUB_WORKSPACE/../HugoTeX/website_contents/public  # ✅ Make sure the public folder is uploaded correctly
+          path: HugoTeX/website_contents/public  # ✅ Make sure the public folder is uploaded correctly
 
   deploy:
     environment:

@@ -1,0 +1,35 @@
+baseURL = "https://hugotex.vercel.app/"
+title = "Portfolio"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+[pagination]
+  pagerSize = 3
+
+[Params.author]
+  name = "Vishnuvardhan Ramesh"
+  abstract = """
+  I am a senior Computer Engineering student at Texas A&M. I have technical experience in digital design
+  and verification, FPGA/ASIC design, comptuer architecture, electronics, and embedded systems. This portfolio
+  contains technical reports about the various projects I've done throughout my years in college. If you're
+  new to this page, I would recommend checking my "Research Proposal and Reccomendation Report" technical writing work, or
+  my "HTAX Verification" overview on hardware design.
+  """
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "paraiso-dark"
+
+[Params]
+  lightmode = true
+  math = true
