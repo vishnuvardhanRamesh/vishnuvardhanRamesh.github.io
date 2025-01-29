@@ -59,7 +59,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "https://vishnuvardhanramesh.github.io/" \
             --source HugoTeX/website_contents  # ✅ Use the correct Hugo project directory
 
       - name: Upload artifact
