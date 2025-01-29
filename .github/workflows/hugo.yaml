@@ -37,9 +37,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          fetch-depth: 0
-
+          submodules: true
       - name: Debug Directory Structure
         run: ls -R  # Check where files are located
 
