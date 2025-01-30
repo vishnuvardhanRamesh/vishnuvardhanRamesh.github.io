@@ -60,6 +60,8 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --source HugoTeX/website_contents  # ✅ Use the correct Hugo project directory
+      - name: Disable Jekyll
+        run: touch HugoTex/public/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
