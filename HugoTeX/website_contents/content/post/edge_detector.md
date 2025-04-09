@@ -10,6 +10,10 @@ Image processing is a great application for hardware design, as typical image pr
 
 This project was first simulated in SystemC using the Anaconda SystemC package for running simulations. The circuit was then designed in Verilog using Cadence XCelium to simulate and verify the correctness of the design. The Verilog design was also verified at the gate-level design using Synopsys Design Compiler and the [OSU standard cell library](https://www.vlsitechnology.org/html/libraries04.html). The code for this project can be found on [Github](https://github.com/vishnuvardhanRamesh/Edge-Detector).
 
+![Starting Picture](/images/ced_starting_image.png)
+![Final Picture](/images/ced_final_image.png)
+
+
 ## Canny Edge Circuit Algorithm
 The following sections detail the specific parts of this algorithm.
 

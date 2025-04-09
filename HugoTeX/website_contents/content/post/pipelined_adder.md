@@ -40,10 +40,12 @@ Now that the necessary gates were made, a 1-bit adder can now be implemented. Th
 
 There are many different ways to design an adder. In this case, we are connecting two 4-bit adders together, using a flip-flop inbetween to store the intermediary result. The flip-flop implemented below utilizes six inverters and four latches. 
 
+![Flip-Flop Schematic](/images/flip_flop_schematic.png)
+
 Once again, the same process is used to create the flip-flop, and the final result connects all these pieces together to form a coherent 8-bit pipelined adder.
 
 ## Conclusion
 
-The creation of a pipelined adder using IC design tools is very tedious when done manually. There are many things to consider when building the adder, and mistakes are easy to make and hard to uncover. Thankfully, there are many tools now that automate the process of physical design. However, it is important to note that most chip design problems are NP-hard, meaning that there is no easy solution to create circuits quickly.
+The creation of a pipelined adder using IC design tools is very tedious when done manually. There are many things to consider when building the adder, and mistakes are easy to make and hard to uncover. Thankfully, there are many tools now that automate the process of physical design. Cadence Innovus in particular is a great tool to convert gate-level Verilog code to a physical layout automatically. Various parameters can be configured to optimize the layout, such as the aspect ratio and cell density. Using Innovus can still take quite some time to create an optimized solution (some designs in my own research take more than 24 hours!), however the process is done autonomously and engineers can work on other tasks.
 
-Ultimately, IC design is an integral part of this world, and has seen countless innovations in the last few decades. With the ending of Moore's law, and problems occuring because of Dennard scaling and Amdahl's Law, it will be intersting to see how chip designers create innovative solutions in the future.
+Ultimately, IC design is an integral part of this world, and has seen countless innovations in the last few decades. There is more excitement in improving hardware designs with the increase in AI technologies. Custom AI accelerators are created for boosting the training of large models, and low power designs are being explored for optimized power efficiency. In the future I hope to see tools that allow for an even easier chip design process, with the potential for fabrication at a low cost.

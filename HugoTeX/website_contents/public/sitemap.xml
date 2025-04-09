@@ -2,38 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://vishnuvardhanramesh.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/htax_verification/</loc>
+    <loc>http://localhost:1313/post/htax_verification/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/tags/index/</loc>
+    <loc>http://localhost:1313/tags/index/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/pipelined_adder/</loc>
+    <loc>http://localhost:1313/post/pipelined_adder/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/edge_detector/</loc>
+    <loc>http://localhost:1313/post/edge_detector/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/technical_papers/</loc>
+    <loc>http://localhost:1313/post/technical_papers/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/post/cnn_fpga/</loc>
+    <loc>http://localhost:1313/post/cnn_fpga/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/categories/</loc>
+    <loc>http://localhost:1313/public/</loc>
   </url><url>
-    <loc>https://vishnuvardhanramesh.github.io/series/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>

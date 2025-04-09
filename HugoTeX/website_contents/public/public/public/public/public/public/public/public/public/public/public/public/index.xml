@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;My name is Vishnuvardhan Ramesh. I am a Computer Engineering student at Texas A&amp;amp;M (class of 2025) with a major interest in VLSI and the semiconductor industry.&lt;/p&gt;&#xA;&lt;p&gt;I am currently an undergraduate researcher working under Dr. Jiang Hu, researching how to use machine learning to enhance EDA tools. I focus on creating a large amount of training data to expand upon and improve the results of a paper detailing &lt;a href=&#34;https://dl.acm.org/doi/abs/10.1145/3670474.3685949&#34;&gt;Flip-Flop Incremental Placement&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTAX Verification - SystemVerilog/UVM</title>
+      <link>//localhost:1313/post/htax_verification/</link>
+      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/htax_verification/</guid>
+      <description>&lt;p&gt;Hardware verification is a integral part of the chip design process. Failures to catch defects can cost millions of dollars for companies. Software bugs can often be patched with a quick update, but most hardware faults can only be fixed by recalling the chip and replacing it.&lt;/p&gt;&#xA;&lt;p&gt;Because of this, Verification Engineers are often employed by companies for the sole purpose of debugging and catching errors in the design before final chip tape out.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>8-bit Pipelined Adder - Physical Chip Design</title>
+      <link>//localhost:1313/post/pipelined_adder/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/pipelined_adder/</guid>
+      <description>&lt;p&gt;Creating an adder in Python takes about thirty seconds. As a matter of fact, in almost every programming language this simple addition operation a miniscule amount of time to program. Writing an adder in assembly code may take slightly longer, though it will still not be a problem. Creating an 8-bit adder as an IC design took me almost six weeks to accomplish.&lt;/p&gt;&#xA;&lt;p&gt;At the end of the day, &lt;em&gt;physical integrated chip design&lt;/em&gt; refers to strips of metal connecting to each other, sending electrical current one way or the other. Controlling the flow of electricity throughout these strips of metal can be a complicated process, and eventually ends up looking something like this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Canny Edge Detector - Verilog/SystemC</title>
+      <link>//localhost:1313/post/edge_detector/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/edge_detector/</guid>
+      <description>&lt;p&gt;Image processing is a great application for hardware design, as typical image processing algorithms involve large amounts of data processing and math operations. This project goes over a &lt;strong&gt;Canny Edge Detector&lt;/strong&gt;, which takes an input image and outputs an image with all the edges outlined. This is typically done by finding sharp discontinuities in an image. This algorithm has high computation, as it utilizes Noise Reduction, Gradient Calculation, Non-Maximum Suppresion, and Hysterisis Thresholding. This creates a highly accurate output image that classifies all borders present in the image.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research Proposal and Reccomendation Report</title>
+      <link>//localhost:1313/post/technical_papers/</link>
+      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/technical_papers/</guid>
+      <description>&lt;p&gt;During the Spring 2024 semester, I had the opportunity to learn about technical writing, and working on various applications including professional emails, letters, memorands, research proposals, and a final reccomendation report. In this post I would like to showcase two papers. One is a individual research proposal to a Texas A&amp;amp;M organization, and the other is a group reccomendation report.&lt;/p&gt;&#xA;&lt;p&gt;These reports enhanced my skills for creating technical documents that adhered to strict formatting guidelines. Throughout the semester I learned how to create a proposal and actually carry that proposal out, sticking to the schedule I outlined at the beginning and keeping all deadlines in mind. I then learned how to analyze the results and present a technical argument for further steps that can be taken.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CNN Design on FPGA - Verilog</title>
+      <link>//localhost:1313/post/cnn_fpga/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/cnn_fpga/</guid>
+      <description>&lt;p&gt;FPGA&amp;rsquo;s (Field Programmable Gate Arrays) are utilized as the middle ground between ASIC&amp;rsquo;s and processors. Microprocessors are cheap and flexible, though not very fast. ASIC&amp;rsquo;s are very expensive and are not flexilbe (Hence the name, Application Specfic Integrated Circuits), though they will have the highest performance. FPGA&amp;rsquo;s provide a higher level of flexibility compared to ASIC&amp;rsquo;s while at the same time providing higher perfomance than general purpose processors.&lt;/p&gt;&#xA;&lt;p&gt;FPGA&amp;rsquo;s are implemented as an array of CLB&amp;rsquo;s packed together. They typically include the following elements:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/public/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/public/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;&#xA;&#x9;&lt;meta name=&#34;generator&#34; content=&#34;Hugo 0.140.0&#34;&gt;&lt;script src=&#34;//localhost:1313/livereload.js?mindelay=10&amp;amp;v=2&amp;amp;port=1313&amp;amp;path=livereload&#34; data-no-instant defer&gt;&lt;/script&gt;&#xA;&lt;meta charset=&#34;utf-8&#34; /&gt;&#xA;&#xA;  &lt;title&gt;&lt;/title&gt;&#xA;&#xA;&#xA;  &lt;meta name=&#34;author&#34; content=&#34;Vishnuvardhan Ramesh&#34;/&gt;&#xA;&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34; /&gt;&#xA;&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;&#xA;&#xA;&#xA;&lt;link rel=&#34;alternate&#34; type=&#34;application/rss+xml&#34; href=&#34;//localhost:1313/index.xml&#34; title=&#34;&#34; /&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;//localhost:1313/css/latex.css&#34; /&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;//localhost:1313/css/main.css&#34; /&gt;&#xA;&lt;script id=&#34;MathJax-script&#34; async src=&#34;//localhost:1313/js/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;intro-header&#34;&gt;&lt;/div&gt;&#xA;&lt;div id=&#34;content&#34;&gt;&#xA;&lt;div class=&#34;container&#34; role=&#34;main&#34;&gt;&#xA;    &lt;div class=&#34;posts-list&#34;&gt;&#xA;      &#xA;        &#xA;      &#xA;&#xA;      &#xA;        &lt;article class=&#34;post-preview&#34;&gt;&#xA;  &lt;a href=&#34;//localhost:1313/post/htax_verification/&#34;&gt;&#xA;      &lt;h2 class=&#34;post-title&#34;&gt;HTAX Verification - SystemVerilog/UVM&lt;/h2&gt;&#xA;  &lt;/a&gt;&#xA;  &lt;div class=&#34;postmeta&#34;&gt;&#xA;    &lt;span class=&#34;meta-post&#34;&gt;&#xA;  &lt;i class=&#34;fa fa-calendar-alt&#34;&gt;&lt;/i&gt;&#xA;  Nov 10, 2024&#xA;  &#xA;&lt;/span&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;post-entry&#34;&gt;&#xA;    &#xA;      &lt;p&gt;&lt;p&gt;Hardware verification is a integral part of the chip design process. Failures to catch defects can cost millions of dollars for companies. Software bugs can often be patched with a quick update, but most hardware faults can only be fixed by recalling the chip and replacing it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

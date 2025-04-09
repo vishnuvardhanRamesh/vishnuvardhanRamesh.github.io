@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Portfolio</title>
-    <link>https://vishnuvardhanramesh.github.io/tags/index/</link>
+    <link>http://localhost:1313/tags/index/</link>
     <description>Recent content in Index on Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://vishnuvardhanramesh.github.io/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://vishnuvardhanramesh.github.io/post/</link>
+      <link>http://localhost:1313/post/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://vishnuvardhanramesh.github.io/post/</guid>
+      <guid>http://localhost:1313/post/</guid>
       <description></description>
     </item>
   </channel>

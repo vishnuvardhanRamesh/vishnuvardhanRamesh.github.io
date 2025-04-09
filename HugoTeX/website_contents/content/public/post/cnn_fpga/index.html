@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8" />
+
+  <title>CNN Design on FPGA - Verilog - </title>
+
+
+  <meta name="author" content="Vishnuvardhan Ramesh"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="//localhost:1313/css/latex.css" />
+<link rel="stylesheet" href="//localhost:1313/css/main.css" />
+<script id="MathJax-script" async src="//localhost:1313/js/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>CNN Design on FPGA - Verilog</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Apr 15, 2024
+  
+</span>
+      </div>
+      <br>
+      
+    <p>FPGA&rsquo;s (Field Programmable Gate Arrays) are utilized as the middle ground between ASIC&rsquo;s and processors. Microprocessors are cheap and flexible, though not very fast. ASIC&rsquo;s are very expensive and are not flexilbe (Hence the name, Application Specfic Integrated Circuits), though they will have the highest performance. FPGA&rsquo;s provide a higher level of flexibility compared to ASIC&rsquo;s while at the same time providing higher perfomance than general purpose processors.</p>
+<p>FPGA&rsquo;s are implemented as an array of CLB&rsquo;s packed together. They typically include the following elements:</p>
+<ul>
+<li>CLB: Configurable Logic Block. These blocks generally contain flip-flops, Lookup Tables, and multiplexors. Verilog RTL code is typically broken down into boolean functions that are implemented into these CLB&rsquo;s.</li>
+<li>Connection Box: Connects CLB to routing interconnect</li>
+<li>Switch Box: Connects routing interconnect throughout the FPGA</li>
+</ul>
+<p>This configuration allows for FPGA&rsquo;s to be extremely efficient when doing a large amount of math operations. Thus, it is interesting to see an implementation of a Convolutional Neural Network design, which relies on using a large amount of Multiply/Accumulate operations, implemented on an FPGA.</p>
+<p>Typical implementation on a FPGA involve for-loop unrolling and memory partioning to transmit data to PE&rsquo;s. This can cause a few issues.</p>
+<ul>
+<li>Large scale data-reuse with DSP blocks can create large fan-out</li>
+<li>DSP blocks are spread throughout the FPGA, creating large interconnect</li>
+<li>Large multiplexors may be required for output data collection</li>
+</ul>
+<p>This implementation is based on this <a href="https://ieeexplore.ieee.org/document/8060313">IEEE paper</a>, which utilizes a Systolic Array structure to circumvent some of the typical problems with implementing this design on an FPGA.</p>
+<h2 id="systolic-array-structure">Systolic Array Structure</h2>
+<p>A systolic array is a specific data structure where Processing Elements are placed in an array-like format, and are only connected to adjacent PE&rsquo;s. This results in local interconnections and easy to implement pipelining between PE&rsquo;s. Data is pumped in and out of the array and the output is stored either in each PE itself or shifted out to an IO buffer.</p>
+<p>Here is a typical implementation showcasing matrix multiplication.</p>
+
+
+<p><img src="/images/sysyolic_mult.png" alt="Systolic Array Multiplication Illustration"></p>
+<p>Similarily, this data structure can be used for the multitude of multiply/accumulate operations done in a Convolutional Neural Network. The figure below shows the basic implementation. An array of Processing Elements are clumped together, with inputs cascading down the array and weights cascading to the right of the array. The output is then propogated back up and into the output buffers, where the results can be stored in memory.</p>
+<p>This process allows for easy pipelining between each processing element, as well as flexibility in the size of the array. This helps solve the challenges of PE placement and data reuse when building a CNN design for FPGA&rsquo;s.</p>
+<p>The code for this can be found on <a href="https://github.com/vishnuvardhanRamesh/CNN_FPGA">Github</a>. it includes the implementation of the Processing Element as well as connecting the PE&rsquo;s together in a systolic aray.</p>
+
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright">
+      <p class="credits theme-by">
+        
+        
+        
+        &copy;
+        2025
+        <a href="//localhost:1313/about/">Vishnuvardhan Ramesh</a>
+      </p>
+  </div>
+</footer></body>
+</html>
