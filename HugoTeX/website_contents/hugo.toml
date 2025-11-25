@@ -11,11 +11,10 @@ footnoteReturnLinkContents = "^"
 [Params.author]
   name = "Vishnuvardhan Ramesh"
   abstract = """
-  I am a senior Computer Engineering student at Texas A&M. I have technical experience in digital design
+  I am a graduate Computer Engineering student at Texas A&M. I have technical experience in digital design
   and verification, FPGA/ASIC design, comptuer architecture, electronics, and embedded systems. This portfolio
   contains technical reports about the various projects I've done throughout my years in college. If you're
-  new to this page, I would recommend checking my "Research Proposal and Reccomendation Report" technical writing work, or
-  my "HTAX Verification" overview on hardware design.
+  new to this page, I would recommend checking my 'HTAX Verification' overview for RTL-level hardware verification.
   """
 
 [taxonomies]

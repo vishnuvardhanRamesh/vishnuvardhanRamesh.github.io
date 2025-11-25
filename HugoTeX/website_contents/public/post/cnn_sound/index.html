@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8" />
+
+  <title>Convoluted Neural Network Models for Environmental Sound Classification - Portfolio</title>
+
+
+  <meta name="author" content="Vishnuvardhan Ramesh"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/latex.css" />
+<link rel="stylesheet" href="http://localhost:1313/css/main.css" />
+<script id="MathJax-script" async src="http://localhost:1313/js/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+<header>
+  <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+    </ul>
+  </div>
+</nav>
+  <div class="intro-header">
+    <div class="container">
+      <div class="post-heading">
+        
+          <h1>Convoluted Neural Network Models for Environmental Sound Classification</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+</header>
+<div id="content">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      <div class="postmeta">
+        <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>
+  Nov 24, 2025
+  
+</span>
+      </div>
+      <br>
+      
+    <h2 id="abstract">Abstract</h2>
+<p>This project investigated various data processing and model development options for analyzing the FSDnoisy18k dataset, which provides a large number of samples across twenty categories of sounds. A CNN model was developed, as well as a CNN and GRU hybrid model. Both models were duplicated, with one being trained on the clean data, and the other being trained on the full dataset. Comparing the results of the four models showed that the hybrid model trained on the full dataset had the highest performance, with an overall test accuracy of 66%. These results line up with the original FSDnoisy18k paper, and highlight the importance of sample size when training a model, as well as the benefits of incorporating temporal modeling through GRU layers.</p>
+<h2 id="environmental-audio-classification">Environmental Audio Classification</h2>
+<p>Audio classification is a growing field that has garnered interest from both researchers and businesses. Advancements in machine learning and data analysis techniques have led to increased performance for audio classification, and these advancements can help businesses in the automotive, medical, and other fields.</p>
+<p>This paper looks at the FSDnoisy18k dataset, curated by Eduardo Fonseca and Mercedes Collado. This dataset is an interesting consolidation of clips taken from Freesound, an online website where users can upload audio clips with labels. These clips are environmental sounds, examples including &lsquo;Clapping&rsquo;, &lsquo;Fire&rsquo;, and &lsquo;Wind&rsquo;. There are over twenty different classes in this dataset. However, only 10% of the data is &lsquo;clean&rsquo; data; that is, data that is manually verified to have the correct label. The <a href="https://ieeexplore.ieee.org/document/8683158">introductory paper</a> introduced by Eduardo Fonseca brings the idea that a large, noisy dataset is much better than a small, clean dataset. More information about the dataset can be found on <a href="https://www.eduardofonseca.net/FSDnoisy18k/">Fonseca&rsquo;s companion page</a>.</p>
+<h2 id="machine-learning-for-audio-classification">Machine Learning for Audio Classification</h2>
+<p>Instead of passing in the raw audio clips, it is best to convert each clip into a Mel spectrogram. A Mel spectrogram will take the audio clip, and convert it into an image where time runs horizontally, frequency runs vertically, and color intensity represents the loudness of different frequencies. This image will capture the major features of the audio clip, while dramatically reducing the computing power needed to train a machine learning model. In addition, images with distinct spatial information can be easily fed into a Convolutional Neural Network, which takes into account spatial information of an image when performing either classification or regression tasks.</p>
+<p><img src="/images/mel_spectrogram.png" alt="Example MEL Spectrogram"></p>
+<p>This paper explores two different models with two different subsets of the FSDnoisy18k dataset. First, both a CNN model and a CNN-GRU model were tested. The CNN model was a baseline model, while the CNN-GRU model introduced a more complex architecture in order to capture better temporal patterns in the audio. As can be seen in the image above, not only is it important to capture spatial features, but also how these features appear across time. The performance of these two models can be seen below.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Model</th>
+          <th style="text-align: left">Dataset</th>
+          <th style="text-align: left">Validation Accuracy</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">CNN Baseline</td>
+          <td style="text-align: left">Clean</td>
+          <td style="text-align: left">46%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CNN Baseline</td>
+          <td style="text-align: left">Clean + Dirty</td>
+          <td style="text-align: left">46%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CNN + GRU</td>
+          <td style="text-align: left">Clean</td>
+          <td style="text-align: left">49%</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CNN + GRU</td>
+          <td style="text-align: left">Clean + Dirty</td>
+          <td style="text-align: left">62%</td>
+      </tr>
+  </tbody>
+</table>
+<p>The &lsquo;Clean + Dirty&rsquo; subset contains both the manually verified clips, as well as audio clips that were labeled by the Freesound community, not manually verified. This dataset was also about 10x larger than just the dataset containing clean clips. Interestingly, adding in both the dirty data into the CNN+GRU model led to the highest test accuracy of about 66%.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This paper went through the processing of audio clips into Mel spectrograms, as well as the training of both a CNN and a CNN+GRU model to perform classification. This research also showcases usefulness in its practical implications. This model can be trained relatively quickly, and can be used as a baseline for businesses to quickly identify noises of interest. Future work may include testing more advanced CNN architectures, or trying out new models such as a transformer model.</p>
+<p>A full length project report is available, as well as a Github repository with the codebase containing the machine learning models and test analysis.</p>
+
+
+
+      
+    </article>
+    
+  </div>
+
+        </div><footer>
+  <div class="container">
+    <p class="credits copyright">
+      <p class="credits theme-by">
+        
+        
+        
+        <a href="http://localhost:1313/">Portfolio</a>,
+        
+        &copy;
+        2025
+        <a href="http://localhost:1313/about/">Vishnuvardhan Ramesh</a>
+      </p>
+  </div>
+</footer></body>
+</html>
