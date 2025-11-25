@@ -37,7 +37,7 @@ The 'Clean + Dirty' subset contains both the manually verified clips, as well as
 
 This paper went through the processing of audio clips into Mel spectrograms, as well as the training of both a CNN and a CNN+GRU model to perform classification. This research also showcases usefulness in its practical implications. This model can be trained relatively quickly, and can be used as a baseline for businesses to quickly identify noises of interest. Future work may include testing more advanced CNN architectures, or trying out new models such as a transformer model.
 
-A full length project report is available, as well as a Github repository with the codebase containing the machine learning models and test analysis.
+A full report analysis of this project along with the codebase containing the machine learning models and test analysis can be found in this [Github repository](https://github.com/vishnuvardhanRamesh/Sound_Classification).
 
 
 
