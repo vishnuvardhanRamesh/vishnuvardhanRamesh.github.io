@@ -6,12 +6,12 @@
     <description>Recent content on Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convoluted Neural Network Models for Environmental Sound Classification</title>
       <link>http://localhost:1313/post/cnn_sound/</link>
-      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/cnn_sound/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;This project investigated various data processing and model development options for analyzing the FSDnoisy18k dataset, which provides a large number of samples across twenty categories of sounds. A CNN model was developed, as well as a CNN and GRU hybrid model. Both models were duplicated, with one being trained on the clean data, and the other being trained on the full dataset. Comparing the results of the four models showed that the hybrid model trained on the full dataset had the highest performance, with an overall test accuracy of 66%. These results line up with the original FSDnoisy18k paper, and highlight the importance of sample size when training a model, as well as the benefits of incorporating temporal modeling through GRU layers.&lt;/p&gt;</description>
     </item>

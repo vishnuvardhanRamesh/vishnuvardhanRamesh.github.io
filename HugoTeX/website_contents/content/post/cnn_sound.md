@@ -1,6 +1,6 @@
 ---
 title: "Convoluted Neural Network Models for Environmental Sound Classification"
-description: "A description on using verification techniques and UVM to validate a basic transmission/receiving module"
+description: "A blog post describing sound classification research"
 date: "2025-11-20"
 author: "Vishnu Ramesh"
 math: true
